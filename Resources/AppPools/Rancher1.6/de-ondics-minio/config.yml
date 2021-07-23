@@ -1,0 +1,9 @@
+name: ScaleIT Objectstorage Minio
+description: |
+  MinIO ist ein Hochleistungsobjektspeicher. Er ist API-kompatibel mit dem Cloud-Speicherdienst Amazon S3. 
+  Er kann unstrukturierte Daten wie Fotos, Videos, Protokolldateien, Backups und Container-Images mit 
+  einer (derzeit) maximal unterstützten Objektgröße von 5 TB verarbeiten.
+maintainer: Ondics GmbH
+license: Ondics App License
+version: 1.0.0
+category: Objectstorage

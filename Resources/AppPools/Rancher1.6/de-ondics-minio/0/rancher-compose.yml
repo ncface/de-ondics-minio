@@ -1,0 +1,43 @@
+.catalog:
+  name: ScaleIT Objectstorage Minio
+  version: 1.0.0
+  description: "Objectstorage Minio für ScaleIT Apps."
+  minimum_rancher_version: v1.6.0
+  questions:
+    - variable: ssoproxy
+      description: |
+        Mit dem SSO-Proxy ist https und die Namensauflösung aktiviert.
+        Der DNS muss korrekt eingerichtet sein.
+      label: "ScaleIT SSO-Proxy benutzen?"
+      required: true
+      default: false
+      type: boolean
+    - variable: DOMAINPREFIX
+      description: "Name für die App (für die URL)"
+      label: "Name (für URL)"
+      type: string
+      required: true
+      default: "minio"
+    - variable: IPADDR
+      description: "Adresse des lokalen Servers (fuer etcd, ...)"
+      label: "IP-Adresse des Servers"
+      type: string
+      required: true
+    - variable: APP_DOMAIN_PORT
+      description: "TCP/IP-Port für REST-Zugriffe"
+      label: "TCP/IP-Port für REST-Zugriffe"
+      type: int
+      required: true
+      default: 51585
+    - variable: APP_CONSOLE_PORT
+      description: "TCP/IP-Port für Objectstorage-Admin"
+      label: "TCP/IP-Port für Objectstorage-Admin"
+      type: int
+      required: true
+      default: 51586
+    - variable: APP_SIDECAR_WEBCONTENT_PORT
+      description: "TCP-Port für statischen Content dieser App (Voreinstellung: 51586)"
+      label: "TCP-Port für statischen Content dieser App"
+      type: int
+      required: true
+      default: 51587
