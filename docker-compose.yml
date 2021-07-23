@@ -1,0 +1,13 @@
+version: '2'
+services:
+  de-ondics-minio:
+    build: DomainSoftware/minio
+    image: registry.app-pool.scaleit-i40.de/r16/enterprise/de-ondics-minio:1.0
+
+  de-ondics-minio-registration:
+    build: PlatformSidecars/registration
+    image: registry.app-pool.scaleit-i40.de/r16/enterprise/de-ondics-minio-registration:1.0
+  
+  de-ondics-minio-webcontent:
+    build: PlatformSidecars/webcontent
+    image: registry.app-pool.scaleit-i40.de/r16/enterprise/de-ondics-minio-webcontent:1.0

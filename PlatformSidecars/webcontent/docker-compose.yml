@@ -1,0 +1,6 @@
+version: '2'
+services: 
+    de-ondics-minio-sidecar-webcontent:
+        build: .
+        ports:
+            - "54821:8080"

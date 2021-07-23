@@ -1,0 +1,3 @@
+[submodule "PlatformSidecars/registration"]
+	path = PlatformSidecars/registration
+	url = git://github.com/scaleit-i40/registration.git
