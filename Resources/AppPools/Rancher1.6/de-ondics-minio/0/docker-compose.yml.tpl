@@ -4,8 +4,8 @@ services:
     image: registry.app-pool.scaleit-i40.de/r16/enterprise/de-ondics-minio:1.0
     restart: always
     labels:
-      rap.host: ${DOMAINPREFIX}=>http:9000
-      rap.host: ${DOMAINPREFIX}-console=>http:9001
+      rap.host: ${DOMAINPREFIX}-api=>http:9000
+      rap.host: ${DOMAINPREFIX}=>http:9001
       rap.sso_disabled: "true"
 {{- if eq .Values.ssoproxy "false"}}
     ports:
@@ -17,7 +17,7 @@ services:
     environment:
       MINIO_ROOT_USER: scaleit
       MINIO_ROOT_PASSWORD: scaleitscaleit
-      MINIO_BROWSER_REDIRECT_URL: ${DOMAINPREFIX}-console.${IPADDR}
+      MINIO_BROWSER_REDIRECT_URL: ${DOMAINPREFIX}.${IPADDR}
     command: server /data --console-address ":9001"
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]

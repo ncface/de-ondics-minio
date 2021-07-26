@@ -28,16 +28,16 @@
       label: "TCP/IP-Port für REST-Zugriffe"
       type: int
       required: true
-      default: 51585
+      default: 51591
     - variable: APP_CONSOLE_PORT
       description: "TCP/IP-Port für Objectstorage-Admin"
       label: "TCP/IP-Port für Objectstorage-Admin"
       type: int
       required: true
-      default: 51586
+      default: 51590
     - variable: APP_SIDECAR_WEBCONTENT_PORT
-      description: "TCP-Port für statischen Content dieser App (Voreinstellung: 51586)"
+      description: "TCP-Port für statischen Content dieser App (Voreinstellung: 51592)"
       label: "TCP-Port für statischen Content dieser App"
       type: int
       required: true
-      default: 51587
+      default: 51592
