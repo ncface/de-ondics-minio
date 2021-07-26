@@ -31,10 +31,10 @@ services:
     restart: always
     environment:
       - APP_ID=de-ondics-minio
-      - APP_NAME=Objectstorage-Minio
-      - APP_TITLE=Objectstorage-Minio
-      - APP_SHORT_DESCRIPTION=Objectstorage-Minio
-      - APP_DESCRIPTION=Objectstorage-Minio
+      - APP_NAME=Minio
+      - APP_TITLE=Minio
+      - APP_SHORT_DESCRIPTION=Minio
+      - APP_DESCRIPTION=Minio
       - APP_CATEGORY=objectstorage
       - APP_DOMAIN_PORT=${APP_PA_PORT}
       - APP_DOMAIN_PATH=
