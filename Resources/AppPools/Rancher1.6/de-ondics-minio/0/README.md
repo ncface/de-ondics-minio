@@ -23,3 +23,6 @@ Kann verwendet werden in nodered mit folgenden Bausteinen:
 # Licence & Author
 
 (c) Copyright by Ondics GmbH
+
+## minio-licence
+Use of MinIO is governed by the GNU AGPLv3 license that can be found in the [LICENSE](https://github.com/minio/minio/blob/master/LICENSE) file.
